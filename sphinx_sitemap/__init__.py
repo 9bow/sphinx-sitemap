@@ -139,10 +139,10 @@ def create_sitemap(app, exception):
 
     get_locales(app, exception)
 
-    if app.builder.config.version:
-        version = app.builder.config.version + '/'
-    else:
-        version = ""
+#     if app.builder.config.version:
+#         version = app.builder.config.version + '/'
+#     else:
+#         version = ""
 
     for link in app.sitemap_links:
         url = ET.SubElement(root, "url")
